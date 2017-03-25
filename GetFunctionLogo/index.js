@@ -1,7 +1,7 @@
 module.exports = function (context, req) {
 
-    const logoUrlFunctions = "https://donnamblobstorage.blob.core.windows.net/public/azure-functions-logo-smaller.png";
-    const logoUrlServerless = "https://donnamblobstorage.blob.core.windows.net/public/azure-serverless.png";
+    const logoUrlFunctions = process.env.FUNCTIONS_LOGO_URL;
+    const logoUrlServerless = process.env.SERVERLESS_LOGO_URL;
 
     const imageId = Math.floor(Math.random() * 3);
     context.log(imageId);

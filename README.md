@@ -7,7 +7,7 @@
     - Add a CORS rule for your storage account domain name
     - OR delete all CORS rules in the Function App, and add a rule for `*`. 
 1. Create a new proxy with route `/logo` and URL of the function `GetFunctionLogo`.
-1. Edit [functions-rock-even-more.html](ContentFiles/functions-rock-even-more.html#L6) and use your proxy URL for the variable `logoUrl`.
+1. Add app settings for `FUNCTIONS_LOGO_URL` and `SERVERLESS_LOGO_URL` to point to the storage URL for `azure-functions-logo-smaller.png` and `azure-serverless.png`. The URL will be similar to `https://accountname.blob.core.windows.net/public/azure-functions-logo-smaller.png`.
 1. Create a new public container in an Azure Storage account. Copy the files in the [ContentFiles](ContentFiles) folder to this container. 
 1. Create a new proxy with route `/` and URL of the file `functions-rock-even-more.html` in your storage account. It will look something like `https://accountname.blob.core.windows.net/public/functions-rock-even-more.html`.
-1. Navigate to the root of you Function App, and you will see the HTML page that is hosted on Azure Storage.
+1. Navigate to the root of your Function App (https://yourappname.azurewebsites.net), and you will see the HTML page that is hosted on Azure Storage.
