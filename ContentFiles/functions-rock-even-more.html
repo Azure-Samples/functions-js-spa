@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<title>&lt;&#9889;&gt;</title>
+	<script type="text/javascript">
+		const logoUrl = "https://function-proxies-demo.azurewebsites.net/logo";
+		function getTasks(url, callback) {
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.onreadystatechange = function () {
+				if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+					callback(xmlHttp.responseText);
+			}
+			xmlHttp.open("GET", url, true); // true for asynchronous 
+			xmlHttp.send();
+		}
+		function printTime(e) { 
+			let time = JSON.parse(e.toString()); 
+			console.log(time); 
+			document.getElementById('time').innerHTML = time; 
+		}
+		function printLogo(e) {
+			console.log("Print logo called");
+			document.getElementById('logo').innerHTML = e.toString();
+		}
+		getTasks(logoUrl, printLogo);
+	</script>
+	<style>
+		.segoed {
+			font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+		}
+		
+		.time {
+			color: white;
+		}
+		
+		body {
+			text-align: center;
+			background-color: #203864;
+		}
+	</style>
+</head>
+
+
+<body>
+	<font face="segoe ui, arial" size=15 weight="bold" color="white">Functions Rule!!!</font>
+
+	<div id="logo"> </div>
+
+</body>
+
+
+</html>
