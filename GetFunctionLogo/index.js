@@ -1,7 +1,7 @@
 module.exports = function (context, req) {
 
-    const logoUrlFunctions = process.env.FUNCTIONS_LOGO_URL;
-    const logoUrlServerless = process.env.SERVERLESS_LOGO_URL;
+    const logoUrlFunctions = process.env.STORAGE_URL_AND_CONTAINER + "/azure-functions-logo-smaller.png";
+    const logoUrlServerless = process.env.STORAGE_URL_AND_CONTAINER + "/azure-serverless.png";
 
     const imageId = Math.floor(Math.random() * 3);
     context.log(imageId);
