@@ -89,6 +89,10 @@
               "value": "[toLower(variables('functionAppName'))]"
             },
             {
+              "name": "PROJECT",
+              "value": "."
+            },
+            {
               "name": "FUNCTIONS_EXTENSION_VERSION",
               "value": "~1"
             },
