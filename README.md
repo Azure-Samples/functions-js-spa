@@ -21,6 +21,6 @@ This sample demonstrates a simple single page application that is hosted on Azur
     [![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Ffunctions-js-spa%2Fmaster%2FAzureDeploy%2Fazuredeploy.json)
 
    - For the `storageUrlAndContainer` parameter, use the path to your storage account, including the container name, such as `https://accountname.blob.core.windows.net/ContentFiles`.
-   - For `repoUrl`, use the path to your fork of the sample.
+   - For `repoUrl`, use either `https://github.com/Azure-Samples/functions-js-spa` or URL of your fork of the sample.
 
 Navigate to the root of your Function App (https://yourappname.azurewebsites.net/), and you will see the HTML page that is hosted on Azure Storage.
