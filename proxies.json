@@ -11,7 +11,7 @@
             "matchCondition": {
                 "route": "/"
             },
-            "backendUri": "%STORAGE_URL%/functions-rock-even-more.html"
+            "backendUri": "%STORAGE_URL_AND_CONTAINER%/functions-rock-even-more.html"
         }
     }
 }
