@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "Logo": {
+            "matchCondition": {
+                "route": "/logo"
+            },
+            "backendUri": "https://functions-proxies-spa.azurewebsites.net/api/GetFunctionLogo"
+        },
+        "Root": {
+            "matchCondition": {
+                "route": "/"
+            },
+            "backendUri": "%STORAGE_URL%/functions-rock-even-more.html"
+        }
+    }
+}
