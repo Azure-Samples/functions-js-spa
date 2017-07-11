@@ -24,3 +24,10 @@ This sample demonstrates a simple single page application that is hosted on Azur
    - For `repoUrl`, use either `https://github.com/Azure-Samples/functions-js-spa` or URL of your fork of the sample.
 
 Navigate to the root of your Function App (https://yourappname.azurewebsites.net/), and you will see the HTML page that is hosted on Azure Storage.
+
+## Next steps
+
+To learn more about Azure Functions Proxies, see the following:
+
+- [Work with Azure Functions Proxies \(preview\)](https://docs.microsoft.com/en-us/azure/azure-functions/functions-proxies)
+- Video: [Tuesdays with Cory: Azure Functions Proxies extravaganza](https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Tuesdays-with-Cory-Azure-Functions-Proxies-extravaganza)
