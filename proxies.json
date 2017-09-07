@@ -5,7 +5,7 @@
             "matchCondition": {
                 "route": "/logo"
             },
-            "backendUri": "https://functions-proxies-spa.azurewebsites.net/api/GetFunctionLogo"
+            "backendUri": "https://%WEBSITE_HOSTNAME%/api/GetFunctionLogo"
         },
         "Root": {
             "matchCondition": {
