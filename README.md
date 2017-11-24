@@ -12,16 +12,18 @@ This sample demonstrates a simple single page application that is hosted on Azur
 
 1. Create a new public container in an Azure Storage account. Copy the files in the [ContentFiles](ContentFiles) folder to this container. 
 
-1. Add a CORS setting for your storage account:
-    - Add a CORS rule for your storage account domain name
-    - OR delete all CORS rules in the Function App, and add a rule for `*`. 
-
-1. Deploy to Azure
+1. Deploy the Function App to Azure
 
     [![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Ffunctions-js-spa%2Fmaster%2FAzureDeploy%2Fazuredeploy.json)
 
    - For the `storageUrlAndContainer` parameter, use the path to your storage account, including the container name, such as `https://accountname.blob.core.windows.net/ContentFiles`.
    - For `repoUrl`, use either `https://github.com/Azure-Samples/functions-js-spa` or URL of your fork of the sample.
+
+1. In the Function App settings, add a CORS setting to permit requests to your storage account. Either:
+    - Add a CORS rule for your storage account domain name
+    - OR delete all CORS rules in the Function App, and add a rule for `*`. 
+
+## Using the App
 
 Navigate to the root of your Function App (https://yourappname.azurewebsites.net/), and you will see the HTML page that is hosted on Azure Storage.
 
